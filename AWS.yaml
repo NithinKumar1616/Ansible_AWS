@@ -1,0 +1,5 @@
+- name: Create ec2 instance and Route 53
+  connection: local
+  hosts: local
+  roles:
+    - role: AWS
