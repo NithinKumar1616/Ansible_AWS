@@ -6,9 +6,9 @@
   - boto3
   - botocore
 
--name: Create ec2 instances
- amazon.aws.ec2_instance:
-  name: "{{ item }}"
+- name: Create ec2 instances
+  amazon.aws.ec2_instance:
+   name: "{{ item }}"
    instance_type: "{{ instance_type }}"
    image_id: "{{ ami_id }}"
    security_group: "{{ sg_id }}"
