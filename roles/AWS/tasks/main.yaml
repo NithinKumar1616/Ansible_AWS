@@ -11,6 +11,7 @@
    name: "{{ item }}"
    instance_type: "{{ instance_type }}"
    image_id: "{{ ami_id }}"
+   region: us-east-1
    security_group: "{{ sg_id }}"
    subnet_id: "{{ subnet_id }}"
   loop: "{{ instances }}"
